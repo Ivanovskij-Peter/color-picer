@@ -8,7 +8,7 @@ const InputChange = ({color,setNewColor}) => {
 
     return (
         <form >
-            <input type='range' min={"0"} max={"255"} onChange={ChangeInputValue} value={color}  name='firstValue'/>
+            <input type='range' min={"0"} max={"255"} onChange={ChangeInputValue} value={color} />
             <label >{color}</label>
         </form>
     );

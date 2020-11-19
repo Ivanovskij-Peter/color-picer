@@ -27,7 +27,12 @@ const App = () => {
         <>
             <Square color={color} />
             <button className={styles.button} onClick={() => setShowInputChange(showInputChange => !showInputChange)}>{showInputChange ? 'Close input change' : 'Choose color'}</button>
-            {showInputChange && <><InputChange color={r} setNewColor={setR} /> <InputChange color={g} setNewColor={setG} /> <InputChange color={b} setNewColor={setB} /></>}
+            {showInputChange &&
+                <>
+                <InputChange color={r} setNewColor={setR} />
+                <InputChange color={g} setNewColor={setG} />
+                <InputChange color={b} setNewColor={setB} />
+            </>}
             <ButtonCancel text={"Cancel"} onClick={onCancel} />
             <ButtonSubmit text={"Submit"} />
            
